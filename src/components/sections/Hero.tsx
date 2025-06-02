@@ -27,7 +27,7 @@ const floatingAnimation = {
     transition: {
       duration: 5,
       repeat: Infinity,
-      repeatType: "reverse",
+      repeatType: "loop" as const,
       ease: "easeInOut"
     }
   }
@@ -41,7 +41,7 @@ const glowAnimation = {
     transition: {
       duration: 3,
       repeat: Infinity,
-      repeatType: "reverse",
+      repeatType: "loop" as const,
       ease: "easeInOut"
     }
   }
@@ -56,7 +56,7 @@ const shimmerAnimation = {
     transition: {
       duration: 3,
       repeat: Infinity,
-      repeatType: "reverse",
+      repeatType: "loop" as const,
       ease: "easeInOut"
     }
   }
