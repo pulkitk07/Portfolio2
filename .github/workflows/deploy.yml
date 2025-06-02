@@ -23,6 +23,19 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: List build output
+        run: ls -la out/
+
+      - name: Check for index.html
+        run: |
+          if [ -f "out/index.html" ]; then
+            echo "index.html exists"
+            cat out/index.html
+          else
+            echo "index.html is missing!"
+            exit 1
+          fi
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
