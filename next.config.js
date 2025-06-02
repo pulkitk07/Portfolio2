@@ -4,8 +4,8 @@ const nextConfig = {
   images: {
     unoptimized: true, // Required for static export
   },
-  basePath: '/Portfolio2', // Replace with your repository name
-  assetPrefix: '/Portfolio2', // Replace with your repository name
+  basePath: process.env.NODE_ENV === 'production' ? '/Portfolio2' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/Portfolio2' : '',
   trailingSlash: true,
 }
 
