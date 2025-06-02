@@ -2,6 +2,10 @@
 
 A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS.
 
+## Live Site
+
+The portfolio is live at: [https://pulkitk07.github.io/Portfolio2/](https://pulkitk07.github.io/Portfolio2/)
+
 ## Getting Started
 
 First, install the dependencies:
@@ -25,6 +29,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - Tailwind CSS
 - React
 - ESLint
+- Framer Motion
 
 ## Project Structure
 
@@ -51,4 +56,8 @@ portfolio2/
 - Type-safe development with TypeScript
 - Optimized images with Next.js Image component
 - Clean and maintainable code structure
-- Fast performance and SEO friendly 
+- Fast performance and SEO friendly
+
+## Deployment
+
+The site is automatically deployed to GitHub Pages using GitHub Actions workflow. Any push to the main branch will trigger a new deployment. 
