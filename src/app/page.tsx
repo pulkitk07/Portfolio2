@@ -9,6 +9,7 @@ import Hero from '@/components/sections/Hero'
 import Navigation from '@/components/Navigation'
 import Projects from '@/components/sections/Projects'
 import Skills from '@/components/sections/Skills'
+import Reviews from '@/components/sections/Reviews'
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <Education />
         <Skills />
         <Projects />
+        <Reviews />
         <Contact />
         <Footer />
       </main>
