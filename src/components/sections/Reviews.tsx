@@ -45,7 +45,7 @@ export default function Reviews() {
               <div className="flex flex-col md:flex-row gap-8 items-start">
                 {/* Reviewer Image */}
                 <motion.div 
-                  className="relative w-32 h-32 rounded-full overflow-hidden flex-shrink-0"
+                  className="relative w-32 h-32 rounded-full overflow-hidden flex-shrink-0 bg-gray-800"
                   {...FLOAT_ANIMATION}
                 >
                   <Image
@@ -53,6 +53,12 @@ export default function Reviews() {
                     alt={review.name}
                     fill
                     className="object-cover"
+                    priority
+                    onError={(e) => {
+                      console.error('Error loading image:', e);
+                      const target = e.target as HTMLImageElement;
+                      target.src = '/profile.jpg'; // Fallback image
+                    }}
                   />
                 </motion.div>
 
