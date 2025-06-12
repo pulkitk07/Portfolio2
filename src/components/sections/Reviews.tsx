@@ -14,7 +14,7 @@ const reviews = [
     name: 'Spikey',
     role: 'CEO & Founder',
     company: 'Fluffr',
-    image: '/Portfolio2/Spikey.jpeg',
+    image: '/Spikey.jpeg',
     quote: '"Working with Pulkit was an absolute game-changer for Fluffr. As our freelance Software Project Manager, he brought structure, clarity, and momentum to the entire development process. From planning to execution, Pulkit ensured every milestone was hit on time—without compromising quality. His ability to lead a cross-functional team and keep everyone aligned made a huge difference. We couldn\'t have built Fluffr without him."'
   }
 ]
