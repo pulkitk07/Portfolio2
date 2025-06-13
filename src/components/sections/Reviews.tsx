@@ -11,7 +11,7 @@ import SectionHeading from '../shared/SectionHeading'
 
 const reviews = [
   {
-    name: 'Spikey',
+    name: 'Spikey Dee',
     role: 'CEO & Founder',
     company: 'Fluffr',
     image: '/Spikey.jpeg',
@@ -48,12 +48,10 @@ export default function Reviews() {
                   className="relative w-32 h-32 rounded-full overflow-hidden flex-shrink-0 bg-gray-800"
                   {...FLOAT_ANIMATION}
                 >
-                  <Image
+                  <img
                     src={review.image}
                     alt={review.name}
-                    fill
-                    className="object-cover"
-                    priority
+                    className="w-full h-full object-cover"
                     onError={(e) => {
                       console.error('Error loading image:', e);
                       const target = e.target as HTMLImageElement;
