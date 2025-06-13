@@ -108,7 +108,7 @@ export default function Hero() {
             className="flex flex-wrap gap-4"
           >
             <motion.a
-              href="/Portfolio2/PK1a.pdf"
+              href="/PK1a.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary/90 transition"
@@ -181,7 +181,7 @@ export default function Hero() {
               transition={{ duration: 0.2 }}
             >
               <Image
-                src="/Portfolio2/profile.jpg"
+                src="/profile.jpg"
                 alt="Pulkit Khursija"
                 fill
                 className="object-cover object-top rounded-2xl transition-transform duration-300 group-hover:scale-105"

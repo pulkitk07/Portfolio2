@@ -16,6 +16,20 @@ const reviews = [
     company: 'Fluffr',
     image: '/Spikey.jpeg',
     quote: '"Working with Pulkit was an absolute game-changer for Fluffr. As our freelance Software Project Manager, he brought structure, clarity, and momentum to the entire development process. From planning to execution, Pulkit ensured every milestone was hit on time—without compromising quality. His ability to lead a cross-functional team and keep everyone aligned made a huge difference. We couldn\'t have built Fluffr without him."'
+  },
+  {
+    name: 'Ronald Hill',
+    role: 'Co-founder & CEO',
+    company: 'GolfeTrack',
+    image: 'https://ui-avatars.com/api/?name=Ronald+Hill&background=random&color=fff&size=128',
+    quote: '"Pulkit was instrumental in turning our vision into a functional and reliable mobile application. He led the development of a GPS-based golf ball tracking system that dramatically improved how we manage tee times, player flow, and real-time course activity. His ability to balance technical precision with user-friendly design made the app a success from day one. As a solo contributor, he exceeded expectations on both strategy and execution."'
+  },
+  {
+    name: 'Russian Cheecks',
+    role: 'Business Owner',
+    company: 'Adult Entertainment',
+    image: '/Russian.jpg',
+    quote: '"Pulkit helped me bring my brand to life with a clean, functional, and beautifully organized Shopify store. He understood my vision without judgment and delivered exactly what I needed—an easy-to-manage storefront that reflects my personality and caters to my audience. Working with him was smooth, respectful, and empowering from start to finish."'
   }
 ]
 
@@ -55,7 +69,7 @@ export default function Reviews() {
                     onError={(e) => {
                       console.error('Error loading image:', e);
                       const target = e.target as HTMLImageElement;
-                      target.src = '/profile.jpg'; // Fallback image
+                      target.src = 'https://ui-avatars.com/api/?name=' + encodeURIComponent(review.name) + '&background=random&color=fff&size=128';
                     }}
                   />
                 </motion.div>
