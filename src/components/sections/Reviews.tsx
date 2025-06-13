@@ -14,7 +14,7 @@ const reviews = [
     name: 'Spikey Dee',
     role: 'CEO & Founder',
     company: 'Fluffr',
-    image: '/Portfolio2/Spikey.jpeg',
+    image: process.env.NODE_ENV === 'production' ? '/Portfolio2/Spikey.jpeg' : '/Spikey.jpeg',
     quote: '"Working with Pulkit was an absolute game-changer for Fluffr. As our freelance Software Project Manager, he brought structure, clarity, and momentum to the entire development process. From planning to execution, Pulkit ensured every milestone was hit on time—without compromising quality. His ability to lead a cross-functional team and keep everyone aligned made a huge difference. We couldn\'t have built Fluffr without him."'
   },
   {
@@ -28,7 +28,7 @@ const reviews = [
     name: 'Russian Cheecks',
     role: 'Business Owner',
     company: 'Adult Entertainment',
-    image: '/Portfolio2/Russian.jpg',
+    image: process.env.NODE_ENV === 'production' ? '/Portfolio2/Russian.jpg' : '/Russian.jpg',
     quote: '"Pulkit helped me bring my brand to life with a clean, functional, and beautifully organized Shopify store. He understood my vision without judgment and delivered exactly what I needed—an easy-to-manage storefront that reflects my personality and caters to my audience. Working with him was smooth, respectful, and empowering from start to finish."'
   }
 ]

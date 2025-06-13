@@ -29,7 +29,7 @@ const projects = [
       'Product Roadmapping',
       'Sprint Planning'
     ],
-    image: '/Portfolio2/projects/creator-platform.svg'
+    image: process.env.NODE_ENV === 'production' ? '/Portfolio2/projects/creator-platform.svg' : '/projects/creator-platform.svg'
   },
   {
     title: 'Golf Course Ball Tracking & Hole Management App',
@@ -48,7 +48,7 @@ const projects = [
       'User Story Mapping',
       'Release Planning'
     ],
-    image: '/Portfolio2/projects/golf-app.svg'
+    image: process.env.NODE_ENV === 'production' ? '/Portfolio2/projects/golf-app.svg' : '/projects/golf-app.svg'
   },
   {
     title: 'Smart Shoes for Assisting People: A Short Survey',
