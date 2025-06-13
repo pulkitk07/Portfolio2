@@ -181,7 +181,7 @@ export default function Hero() {
               transition={{ duration: 0.2 }}
             >
               <Image
-                src="/profile.jpg"
+                src="/Portfolio2/profile.jpg"
                 alt="Pulkit Khursija"
                 fill
                 className="object-cover object-top rounded-2xl transition-transform duration-300 group-hover:scale-105"
