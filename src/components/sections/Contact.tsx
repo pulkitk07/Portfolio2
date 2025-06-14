@@ -1,5 +1,6 @@
 'use client'
 
+import { motion } from 'framer-motion'
 import SectionWrapper from '../shared/SectionWrapper'
 import SectionHeading from '../shared/SectionHeading'
 
@@ -48,16 +49,18 @@ export default function Contact() {
       <SectionHeading>Get in Touch</SectionHeading>
       <div className="flex flex-wrap gap-6 justify-center mb-8">
         {socialLinks.map((link) => (
-          <a
+          <motion.a
             key={link.name}
             href={link.url}
             target="_blank"
             rel="noopener noreferrer"
             className="p-4 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
           >
             <span className="sr-only">{link.name}</span>
             {link.icon}
-          </a>
+          </motion.a>
         ))}
       </div>
       <div className="w-full flex justify-center">
