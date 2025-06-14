@@ -1,8 +1,5 @@
 'use client'
 
-import { useState } from 'react'
-import { motion } from 'framer-motion'
-import { FADE_UP_ANIMATION_VARIANTS, PULSE_ANIMATION, FLOAT_ANIMATION } from '@/lib/constants'
 import SectionWrapper from '../shared/SectionWrapper'
 import SectionHeading from '../shared/SectionHeading'
 
@@ -46,174 +43,35 @@ const socialLinks = [
 ]
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
-  })
-  const [isSubmitting, setIsSubmitting] = useState(false)
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-    
-    try {
-      // Here you would typically send the email using a service like EmailJS, SendGrid, etc.
-      // For now, we'll just simulate sending by opening the default mail client
-      const mailtoLink = `mailto:pulkitkhursija@live.com?subject=Portfolio Contact from ${formData.name}&body=${formData.message}%0D%0A%0D%0AFrom: ${formData.email}`
-      window.location.href = mailtoLink
-      setSubmitStatus('success')
-      setFormData({ name: '', email: '', message: '' })
-    } catch (error) {
-      setSubmitStatus('error')
-    } finally {
-      setIsSubmitting(false)
-      setTimeout(() => setSubmitStatus('idle'), 3000)
-    }
-  }
-
   return (
     <SectionWrapper id="contact">
-      <div className="space-y-8">
-        <motion.div
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-          variants={FADE_UP_ANIMATION_VARIANTS}
-        >
-          <SectionHeading>Get in Touch</SectionHeading>
-        </motion.div>
-        
-        <motion.div 
-          variants={FADE_UP_ANIMATION_VARIANTS}
-          className="flex flex-wrap gap-6 justify-center"
-        >
-          {socialLinks.map((link, index) => (
-            <motion.a
-              key={link.name}
-              href={link.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-4 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <span className="sr-only">{link.name}</span>
-              <motion.div {...FLOAT_ANIMATION}>
-                {link.icon}
-              </motion.div>
-            </motion.a>
-          ))}
-        </motion.div>
-
-        <motion.form
-          variants={FADE_UP_ANIMATION_VARIANTS}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-          onSubmit={handleSubmit}
-          className="max-w-2xl mx-auto space-y-6"
-        >
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2 }}
-            >
-              <label htmlFor="name" className="block text-sm font-medium mb-2">
-                Name
-              </label>
-              <motion.input
-                type="text"
-                id="name"
-                required
-                value={formData.name}
-                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                className="w-full px-4 py-2 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 focus:ring-2 focus:ring-primary"
-                whileFocus={{ scale: 1.02 }}
-              />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.3 }}
-            >
-              <label htmlFor="email" className="block text-sm font-medium mb-2">
-                Email
-              </label>
-              <motion.input
-                type="email"
-                id="email"
-                required
-                value={formData.email}
-                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                className="w-full px-4 py-2 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 focus:ring-2 focus:ring-primary"
-                whileFocus={{ scale: 1.02 }}
-              />
-            </motion.div>
-          </div>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.4 }}
+      <SectionHeading>Get in Touch</SectionHeading>
+      <div className="flex flex-wrap gap-6 justify-center mb-8">
+        {socialLinks.map((link) => (
+          <a
+            key={link.name}
+            href={link.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-4 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors"
           >
-            <label htmlFor="message" className="block text-sm font-medium mb-2">
-              Message
-            </label>
-            <motion.textarea
-              id="message"
-              required
-              rows={6}
-              value={formData.message}
-              onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-              className="w-full px-4 py-2 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 focus:ring-2 focus:ring-primary"
-              whileFocus={{ scale: 1.02 }}
-            />
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.5 }}
-          >
-            <motion.button
-              type="submit"
-              disabled={isSubmitting}
-              className="w-full md:w-auto px-8 py-3 rounded-lg bg-primary text-white hover:bg-primary/90 transition-colors disabled:opacity-50"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              {...(isSubmitting ? PULSE_ANIMATION : {})}
-            >
-              {isSubmitting ? 'Sending...' : 'Send Message'}
-            </motion.button>
-            {submitStatus === 'success' && (
-              <motion.p 
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                className="mt-2 text-green-600 dark:text-green-400"
-              >
-                Message sent successfully!
-              </motion.p>
-            )}
-            {submitStatus === 'error' && (
-              <motion.p 
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                className="mt-2 text-red-600 dark:text-red-400"
-              >
-                Failed to send message. Please try again.
-              </motion.p>
-            )}
-          </motion.div>
-        </motion.form>
+            <span className="sr-only">{link.name}</span>
+            {link.icon}
+          </a>
+        ))}
+      </div>
+      <div className="w-full flex justify-center">
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSe1_O-Gk-V_i_8nHzT53YYZU3daX0Akf8OkGWnI-ExxCHb6CQ/viewform?embedded=true"
+          width="640"
+          height="855"
+          frameBorder="0"
+          marginHeight={0}
+          marginWidth={0}
+          title="Contact Form"
+        >
+          Loading…
+        </iframe>
       </div>
     </SectionWrapper>
   )
