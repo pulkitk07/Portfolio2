@@ -7,8 +7,8 @@ import SectionHeading from '../shared/SectionHeading'
 
 const experiences = [
   {
-    title: 'Software Project Manager',
-    company: 'Renotek',
+    title: 'Software Product Manager',
+    company: 'Tungsten Automation',
     location: '🇺🇲',
     duration: 'Nov 2023 - Present',
   },
