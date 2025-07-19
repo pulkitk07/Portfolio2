@@ -15,7 +15,7 @@ const projects = [
   {
     title: 'Fluffr Colab – Creator Collaboration Platform',
     abstract: `Bootstrapped and launched a networking platform for content creators across YouTube, TikTok, OnlyFans, Instagram, Twitch, and more. The app allows users to connect, filter by niche, location, and follower count, and explore potential collaborations. Designed to simplify creator discovery and foster meaningful partnerships within the digital creator community.`,
-    link: 'https://www.fluffr.com',
+    link: 'https://peppy-dodol-fe5fd4.netlify.app/',
     year: '2025 (Current)',
     platform: 'Web & Mobile Platform',
     techStack: [
