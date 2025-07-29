@@ -99,8 +99,11 @@ export default function Hero() {
             variants={FADE_UP_ANIMATION_VARIANTS}
             className="text-lg text-secondary dark:text-secondary-dark max-w-2xl"
           >
-            A well-accomplished Strategic Project Manager with direct working experience in IOT and AI Products. 
-            Self-motivated and results-oriented individual with a strong go-to-market experience and sound business acumen.
+            Started out writing code, but I quickly realized I loved solving the “why” behind the product just as much as the “how.” 
+            Over the last 5+ years, I’ve worked across startups and enterprise teams, helping launch cloud-based SaaS platforms, streamline Salesforce + Outreach systems, and drive better visibility for sales and GTM teams. 
+            At one point, I helped clean up cross-module chaos during an SAP rollout — got the backlog under control and helped the team start hitting story points again. 
+            In another project, I worked closely with sales ops to connect Outreach and Salesforce — made their lives a little easier by cutting down a lot of the manual back-and-forth. 
+            Whether it’s fixing delivery gaps, building roadmaps, or translating between tech and business, I’ve been the person teams rely on to keep things moving and outcomes aligned.
           </motion.p>
 
           <motion.div 
