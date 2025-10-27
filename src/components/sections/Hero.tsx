@@ -111,7 +111,7 @@ export default function Hero() {
             className="flex flex-wrap gap-4"
           >
             <motion.a
-              href={process.env.NODE_ENV === 'production' ? '/Portfolio2/PK1a.pdf' : '/PK1a.pdf'}
+              href={process.env.NODE_ENV === 'production' ? '/Portfolio2/PK1a.1.pdf' : '/PK1a.1.pdf'}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary/90 transition"
@@ -184,7 +184,7 @@ export default function Hero() {
               transition={{ duration: 0.2 }}
             >
               <Image
-                src={process.env.NODE_ENV === 'production' ? '/Portfolio2/profile.jpg' : '/profile.jpg'}
+                src={process.env.NODE_ENV === 'production' ? '/Portfolio2/Profile.png' : '/Profile.png'}
                 alt="Pulkit Khursija"
                 fill
                 className="object-cover object-top rounded-2xl transition-transform duration-300 group-hover:scale-105"
