@@ -10,7 +10,7 @@ const experiences = [
     title: 'Software Product Manager',
     company: 'Tungsten Automation',
     location: '🇺🇲',
-    duration: 'Nov 2023 - Present',
+    duration: 'Aug 2023 - Present',
   },
   {
     title: 'Solutions Engineer/ Product Owner',
@@ -28,7 +28,7 @@ const experiences = [
     title: 'Software Engineer',
     company: 'Imagery',
     location: '🇺🇲',
-    duration: 'Jan 2022 - Apr 2022',
+    duration: 'Jan 2022 - Aug 2022',
   },
   {
     title: 'Graduate Research and Teaching Assistant',
