@@ -111,7 +111,7 @@ export default function Hero() {
             className="flex flex-wrap gap-4"
           >
             <motion.a
-              href={process.env.NODE_ENV === 'production' ? '/Portfolio2/PK1a.1.pdf' : '/PK1a.1.pdf'}
+              href={process.env.NODE_ENV === 'production' ? '/Portfolio2/PK1a.1.docx' : '/PK1a.1.docx'}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary/90 transition"
