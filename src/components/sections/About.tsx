@@ -15,7 +15,7 @@ export default function About() {
           className="space-y-4 text-lg text-secondary dark:text-secondary-dark"
         >
           <p>
-            I am a Project Manager with over 5+ years of management experience, currently based in Dayton, Ohio. 
+            I am a PMP Certified Project Manager with over 5+ years of management experience, currently based in Dayton, Ohio. 
             Throughout my career, I have developed excellent management and leadership skills, coupled with strong 
             problem-solving abilities, effective communication, and exceptional organizational and interpersonal skills.
           </p>
