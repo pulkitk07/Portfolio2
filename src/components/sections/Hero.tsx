@@ -91,7 +91,8 @@ export default function Hero() {
               I&apos;m{" "}
               <span className="text-primary">
                 Pulkit Khursija
-              </span>
+              </span> <br />
+              PMP
             </motion.h1>
           </div>
 
