@@ -100,11 +100,11 @@ export default function Hero() {
             variants={FADE_UP_ANIMATION_VARIANTS}
             className="text-lg text-secondary dark:text-secondary-dark max-w-2xl"
           >
-            Started out writing code, but I quickly realized I loved solving the “why” behind the product just as much as the “how.” 
-            Over the last 5+ years, I’ve worked across startups and enterprise teams, helping launch cloud-based SaaS platforms, streamline Salesforce + Outreach systems, and drive better visibility for sales and GTM teams. 
-            At one point, I helped clean up cross-module chaos during an SAP rollout — got the backlog under control and helped the team start hitting story points again. 
-            In another project, I worked closely with sales ops to connect Outreach and Salesforce — made their lives a little easier by cutting down a lot of the manual back-and-forth. 
-            Whether it’s fixing delivery gaps, building roadmaps, or translating between tech and business, I’ve been the person teams rely on to keep things moving and outcomes aligned.
+           I've spent 6+ years being the person teams call when things stop making sense. Not because I have all the answers, but because I understand both sides of the table. I know what the engineers are dealing with, and I know what the business is asking for. And I know how to get those two worlds to actually work together.
+           At Tungsten Automation, I led the delivery of AI-powered document processing platforms, SAP integrations, and cloud deployments. I cut invoice processing times by 40%, got NLP model accuracy up to 93%, and fixed CI/CD pipelines that were breaking every single release cycle. Before that, at TCS, I worked on large-scale enterprise modernization for Deutsche Bundesbank, handling data migrations, backend APIs, and fraud detection systems across international teams.
+           I am someone who gets close to the work. I sit in sprint planning and actually follow the technical conversation. I write risk plans that engineers respect and that executives can act on. I have managed projects where key people walked out mid-delivery, where UAT failed two weeks before go-live, and where the scope kept changing even when the deadline did not. That is when I do my best work.
+           PMP certified. Agile trained. Computer science background.
+           If that sounds like the kind of PM you are looking for, let's connect.
           </motion.p>
 
           <motion.div 
