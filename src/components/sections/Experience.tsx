@@ -9,31 +9,31 @@ const experiences = [
   {
     title: 'Project Manager',
     company: 'Tungsten Automation',
-    location: '🇺🇲',
+    location: 'USA',
     duration: 'Aug 2023 - Present',
   },
   {
     title: 'Solutions Engineer/ Product Owner',
     company: 'Codeboxx',
-    location: '🇺🇲',
+    location: 'USA',
     duration: 'May 2023 - Jul 2023',
   },
   {
     title: 'Product Owner',
     company: 'Denken Solutions',
-    location: '🇺🇲',
+    location: 'USA',
     duration: 'Jan 2023 - Apr 2023',
   },
   {
     title: 'Software Engineer',
     company: 'Imagery',
-    location: '🇺🇲',
+    location: 'USA',
     duration: 'Jan 2022 - Aug 2022',
   },
   {
     title: 'Graduate Research and Teaching Assistant',
     company: 'Wright State University',
-    location: '🇺🇲',
+    location: 'USA',
     duration: 'Feb 2021 - Dec 2021',
   },
   {
