@@ -7,7 +7,7 @@ import SectionHeading from '../shared/SectionHeading'
 
 const skillCategories = [
   {
-    title: 'Product Management',
+    title: 'Project Management',
     skills: [
       'Agile',
       'Scrum',
@@ -19,6 +19,14 @@ const skillCategories = [
       'User Story Writing',
       'Business Process Mapping',
       'Facilitation of Large Groups',
+    ],
+  },
+  {
+    title: 'Soft Skills',
+    skills: [
+      'Leadership',
+      'Cross-Functional Collaboration',
+      'Data-Driven Decision-Making',
     ],
   },
   {
@@ -48,14 +56,7 @@ const skillCategories = [
       'Financial model forecasting',
     ],
   },
-  {
-    title: 'Soft Skills',
-    skills: [
-      'Leadership',
-      'Cross-Functional Collaboration',
-      'Data-Driven Decision-Making',
-    ],
-  },
+  
 ]
 
 export default function Skills() {
