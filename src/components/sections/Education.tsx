@@ -9,7 +9,7 @@ const education = [
   {
     degree: "Master's in Computer Science",
     university: 'Wright State University',
-    location: '🇺🇲',
+    location: 'USA',
     year: '2021 - 2022',
     major: 'Computer Science',
   },
